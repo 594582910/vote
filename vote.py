@@ -37,7 +37,7 @@ for i in range(L):
     configHttp.post()
 
     # 等待时间
-    w = random.randint(60, 600)
+    w = random.randint(1, 3)
     time.sleep(w)
     print(w)
 
