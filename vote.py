@@ -11,6 +11,7 @@ import random
 localReadConfig = readConfig.ReadConfig()
 configHttp = ConfigHttp.ConfigHttp()
 voteInfo = common.get_xls("vote.xls","vote")
+# print(voteInfo)
 L = len(voteInfo)
 
 
@@ -20,12 +21,12 @@ for i in range(L):
 
     #设置url
     url = common.get_url_from_xml('vote')
-    print(url)
     configHttp.set_url(url)
 
     # 设置请求头
-    cookie = voteInfo[i][3]
-    expert_userInfo = voteInfo[i][4]
+    cookie = voteInfo[i][2]
+    expert_userInfo = voteInfo[i][3]
+    print(expert_userInfo)
     header = {"Cookie":cookie ,"expert_userInfo":expert_userInfo }
     configHttp.set_headers(header)
 
@@ -39,7 +40,6 @@ for i in range(L):
     # 等待时间
     w = random.randint(1, 3)
     time.sleep(w)
-    print(w)
 
 
 
