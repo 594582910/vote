@@ -1,11 +1,11 @@
-#import unittest
-#import paramunittest
-#import readConfig as readConfig
-#from common import Log as Log
-#from common import common
-#from common import configHttp as ConfigHttp
-#import time
-#import random
+import unittest
+import paramunittest
+import readConfig as readConfig
+from common import Log as Log
+from common import common
+from common import configHttp as ConfigHttp
+import time
+import random
 
 
 localReadConfig = readConfig.ReadConfig()
