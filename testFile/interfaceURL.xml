@@ -3,7 +3,6 @@
     <url name="vote">
         <group>ajax</group>
         <module>m_server.ashx</module>
-        <action>?type=awardguestvote</action>
     </url>
 
     <url name="login">
